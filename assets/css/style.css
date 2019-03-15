@@ -1,0 +1,44 @@
+body {
+    background: rgb(238, 233, 233);
+}
+
+h1 {
+    text-align: center;
+    background: white;
+    height: 100px;
+    padding: 15px;
+   
+
+} 
+
+
+.container {
+    padding-right:15px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left:15px;
+    background: white;
+    width: 75%;
+   
+}
+#addTrain {
+    border-style: inset;
+   
+}
+#trainInfo {
+    border-style: inset;
+    padding: 100px;
+    
+  }
+.form-control{
+    padding: 50px, 20px, 50px, 20px;
+}
+tr:nth-child(even) {
+    background-color: lightgray;
+}
+th, td {
+    padding: 9px;
+}
+footer{
+    height: 50px;
+}
