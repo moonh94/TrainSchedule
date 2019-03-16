@@ -26,60 +26,45 @@
     <br>
     <br>
     <div class="container">
-        <caption>Current Train Schedule</caption>
+       <div>
+       <caption><strong>Current Train Schedule</strong></caption>
         <table id="trainInfo" width=100%;>
             <tr>
                 <th>Train Name</th>
                 <th>Destination</th>
-                <th>Frequency</th>
+                <th>Frequency(Min)</th>
                 <th>Next Arrival</th>
                 <th>Minutes Away(Min)</th>
                 <br>
-            <tr>
-                <td>Hogwarts Express</td>
-                <td>Hogwarts School of Witchraft and Wizardry</td>
-                <td>60</td>
-                <td>1345</td>
-                <td>5</td>
-            </tr>
-            <tr>
-                <td>Hogwarts Express</td>
-                <td>Hogwarts School of Witchraft and Wizardry</td>
-                <td>60</td>
-                <td>1345</td>
-                <td>5</td>
-            </tr>
-            <tr>
-                <td>Hogwarts Express</td>
-                <td>Hogwarts School of Witchraft and Wizardry</td>
-                <td>60</td>
-                <td>1345</td>
-                <td>5</td>
-            </tr>
+        
         </tr>
-        </table>
+    </table>
+        <button type="submit" class="btn btn-primary" onClick="refreshPage()">Refresh Button</button>
+        </div>
         <br>
-        <caption>Add Train</caption>
+       <strong>Add Train</strong>
         <div id="addTrain">
             <form>
                 <div class="form-group">
                     <label for="trainName">Train Name</label>
-                    <input type="text" class="form-control" id="name" placeholder="">
+                    <input type="text" class="form-control" id="name-input" placeholder="">
                     <label for="destination">Destination</label>
-                    <input type="text" class="form-control" id="role" placeholder="">
-                    <label for="firstTrainTime">First Train Time (Military Time) </label>
-                    <input type="text" class="form-control" id="start" placeholder="">
-                    <label for="frequency">Frequency</label>
-                    <input type="text" class="form-control" id="rate" placeholder="">
+                    <input type="text" class="form-control" id="destination-input" placeholder="">
+                    <label for="firstTrainTime">First Train Time (HH:MM) </label>
+                    <input type="text" class="form-control" id="time-input" placeholder="">
+                    <label for="frequency">Frequency (Min)</label>
+                    <input type="text" class="form-control" id="frequency-input" placeholder="">
                 </div>
             </form>
-            <input class="btn btn-primary" type="submit" value="Submit">
+            <input id="submit" class="btn btn-primary" type="submit" value="Submit">
+        
         </div>
 
     </div>
     <footer></footer>
-        <script src="https://www.gstatic.com/firebasejs/5.8.6/firebase.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/5.9.0/firebase.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>
         <script type="text/javascript" src="assets/javascript/trainschedule.js"></script>
 </body>
 
